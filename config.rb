@@ -1,7 +1,7 @@
 http_path = "/"
 css_dir = "dist/css"
-sass_dir = "src/sass"
-images_dir = "src/img"
+sass_dir = "app/sass"
+images_dir = "app/img"
 
 output_style = :expanded
 relative_assets = true
