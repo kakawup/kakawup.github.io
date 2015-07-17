@@ -127,5 +127,5 @@ module.exports = (grunt) ->
   # Tasks
   grunt.registerTask "default", ["open", "connect", "watch"]
   grunt.registerTask "build", ["coffee", "compass", "copy", "jshint"]
-  grunt.registerTask "deploy", ["gh-pages"]
+  grunt.registerTask "deploy", ["buildcontrol"]
   grunt.registerTask "cleanup", ["clean"]
