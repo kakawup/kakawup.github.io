@@ -1,0 +1,464 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article,
+section,
+nav,
+aside,
+header,
+footer,
+hgroup,
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #435;
+  color: #eee;
+  font-size: 14px;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  color: #eee;
+  -moz-transition: ALL 0.2s ease;
+  -o-transition: ALL 0.2s ease;
+  -webkit-transition: ALL 0.2s ease;
+  transition: ALL 0.2s ease;
+}
+
+.container {
+  /* position: fixed; */
+  width: 100%;
+  height: 100%;
+  /* overflow: auto; */
+}
+.container section {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 680px) {
+  .container section {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 680px) {
+  .container section {
+    max-width: 100%;
+  }
+}
+.container section #global-header > h1,
+.container section #global-header > nav li {
+  display: none;
+}
+
+#global-header {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+@media screen and (min-width: 680px) {
+  #global-header h1 {
+    cursor: pointer;
+    width: 380px;
+    height: 75%;
+    min-height: 320px;
+    margin: 5% auto 0;
+    background: url("../img/title-logo.png") center center no-repeat;
+    background-size: 360px 230px;
+  }
+  #global-header h1 span {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 680px) {
+  #global-header h1 {
+    cursor: pointer;
+    width: 190px;
+    height: 70%;
+    min-height: 320px;
+    margin: 10% auto 0;
+    background: url("../img/title-logo.png") center center no-repeat;
+    background-size: 180px 115px;
+  }
+  #global-header h1 span {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 680px) {
+  #global-header nav ul {
+    width: 100%;
+    text-align: center;
+  }
+  #global-header nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    margin: 0 10px;
+    border: 1px solid #666;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    -moz-transition: ALL 0.2s ease;
+    -o-transition: ALL 0.2s ease;
+    -webkit-transition: ALL 0.2s ease;
+    transition: ALL 0.2s ease;
+  }
+  #global-header nav ul li:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  #global-header nav ul li a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 17.5px;
+  }
+  #global-header nav ul li a span {
+    display: block;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #global-header nav ul {
+    width: 100%;
+    text-align: center;
+  }
+  #global-header nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    margin: 0 5px;
+    border: 1px solid #666;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    -moz-transition: ALL 0.2s ease;
+    -o-transition: ALL 0.2s ease;
+    -webkit-transition: ALL 0.2s ease;
+    transition: ALL 0.2s ease;
+  }
+  #global-header nav ul li:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  #global-header nav ul li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12.25px;
+  }
+  #global-header nav ul li a span {
+    display: block;
+    letter-spacing: 1px;
+  }
+}
+
+article {
+  width: auto;
+}
+@media screen and (min-width: 680px) {
+  article {
+    margin: 200px 20px 20px 240px;
+  }
+}
+@media screen and (max-width: 680px) {
+  article {
+    margin: 50px 10px;
+    padding: 10px;
+  }
+}
+article a:hover,
+article a:focus {
+  color: #dcf;
+}
+article h2 {
+  font-size: 35px;
+  padding: 5px 10px;
+  letter-spacing: 10px;
+  color: #dcf;
+}
+article > div {
+  margin: 10px 0;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.1);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+article > div h3 {
+  font-size: 20px;
+  padding: 10px 0;
+  vertical-align: middle;
+  letter-spacing: 3px;
+}
+article > div > div {
+  padding: 10px 0 10px 15px;
+}
+article > div > div h4 {
+  font-size: 15px;
+}
+article > div p {
+  padding: 10px 0;
+  line-height: 25px;
+}
+article > div ul {
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+article > div ul li {
+  margin: 0 10px 0 0;
+  padding: 0 0 0 20px;
+  line-height: 25px;
+  float: left;
+}
+article > div ul li:before {
+  content: '■';
+  width: 1em;
+  margin: 0 -1.5em;
+  color: #dcf;
+  font-size: 60%;
+  float: left;
+}
+article > div dl {
+  width: 100%;
+  padding: 10px 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+article > div dl dt, article > div dl dd {
+  line-height: 25px;
+  word-wrap: break-word;
+}
+article > div dl dt {
+  padding: 0 0 0 20px;
+}
+article > div dl dt:before {
+  content: '■';
+  width: 1em;
+  margin: 0 -1.5em;
+  color: #dcf;
+  font-size: 60%;
+  float: left;
+}
+@media screen and (min-width: 680px) {
+  article > div dl dt {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 15%;
+    float: left;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media screen and (min-width: 680px) {
+  article > div dl dd {
+    width: 85%;
+    float: left;
+  }
+}
+@media screen and (max-width: 680px) {
+  article > div dl dd {
+    margin: 0 0 0 2em;
+  }
+}
+
+#global-footer {
+  width: auto;
+  opacity: .2;
+  background: url("../img/title-logo.png") center center no-repeat;
+}
+@media screen and (min-width: 680px) {
+  #global-footer {
+    height: 400px;
+    margin: 50px 10px 50px 240px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #global-footer {
+    height: 300px;
+    margin: 20px;
+    background-size: 180px 115px;
+  }
+}
+
+#fix-nav #drawer-wrap {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 680px) {
+  #fix-nav #drawer-wrap {
+    width: 100%;
+    height: 50px;
+  }
+}
+#fix-nav #drawer-wrap h1 {
+  cursor: pointer;
+}
+@media screen and (min-width: 680px) {
+  #fix-nav #drawer-wrap h1 {
+    width: 180px;
+    height: 260px;
+    background: url("../img/title-logo-side.png") center top no-repeat;
+  }
+}
+@media screen and (max-width: 680px) {
+  #fix-nav #drawer-wrap h1 {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.9) url("../img/title-logo-bar.png") center center no-repeat;
+    background-size: 40px;
+  }
+}
+#fix-nav #drawer-wrap h1 span {
+  display: none;
+  visibility: hidden;
+}
+@media screen and (max-width: 680px) {
+  #fix-nav #drawer-wrap nav {
+    display: none;
+    position: fixed;
+    z-index: 30;
+  }
+}
+@media screen and (min-width: 680px) {
+  #fix-nav #drawer-wrap nav ul {
+    display: block;
+    width: 180px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 680px) {
+  #fix-nav #drawer-wrap nav ul {
+    position: fixed;
+    z-index: 20;
+    top: 50px;
+    left: 0;
+    width: 30%;
+    min-width: 100px;
+    padding: 25px 20px;
+  }
+}
+@media screen and (min-width: 680px) {
+  #fix-nav #drawer-wrap nav ul li {
+    border: 1px solid #768;
+    border-width: 0 0 1px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #fix-nav #drawer-wrap nav ul li {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    background: #221a2b;
+    text-align: center;
+    border: 1px solid #ccc;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+  }
+}
+@media screen and (min-width: 680px) {
+  #fix-nav #drawer-wrap nav ul li a {
+    display: block;
+    height: 80px;
+    font-size: 18px;
+    line-height: 80px;
+  }
+  #fix-nav #drawer-wrap nav ul li a:hover, #fix-nav #drawer-wrap nav ul li a:active {
+    opacity: .5;
+  }
+}
+@media screen and (max-width: 680px) {
+  #fix-nav #drawer-wrap nav ul li a {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 12.25px;
+  }
+}
+@media screen and (min-width: 680px) {
+  #fix-nav #drawer-wrap nav ul li a span {
+    display: block;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #fix-nav #drawer-wrap nav ul li a span {
+    display: block;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 680px) {
+  #fix-nav #drawer-wrap #drawer-icon {
+    cursor: pointer;
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url("../img/drawer-icon.png") center center no-repeat;
+    background-size: 30px;
+  }
+  #fix-nav #drawer-wrap #drawer-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+@media screen and (max-width: 680px) {
+  #fix-nav #drawer-wrap #drawer-shade {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #221a2b;
+    opacity: .8;
+  }
+}
