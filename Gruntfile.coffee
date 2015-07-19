@@ -8,7 +8,7 @@ module.exports = (grunt) ->
       src:    "app"
       dist:   "dist"
       coffee: "coffee"
-      sass:   "sass"
+      sass:   "scss"
       js:     "js"
       css:    "css"
       lib:    "lib"

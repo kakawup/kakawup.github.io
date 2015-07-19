@@ -1,0 +1,58 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Variables
+// ==================================================
+
+// ==============================
+//   Size
+// ==============================
+
+$content-width: 960px;
+
+
+// ==============================
+//   Margin / Padding
+// ==============================
+
+
+
+// ==============================
+//   Color
+// ==============================
+
+$text-color: $gray-lighter;
+$link-color: $gray-lighter;
+$link-hover-color: $purple-light;
+
+$main-bg: $purple-dark;
+
+$nav-border-color: $gray-dark;
+
+
+// ==============================
+//   Typography
+// ==============================
+
+$font-family-base: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
+
+$font-size-base: 14px;
+$font-size-large: $font-size-base * 1.25;
+
+
+// ==============================
+//   Misc
+// ==============================
+
+$transition-base: ALL 0.2s ease;
+
+$filter-light: rgba(255, 255, 255, .15);
+
+// ==============================
+//   Media Queries
+// ==============================
+
+$mobile-size: 680px;
+
+$default-context: bp(min-width, $mobile-size);
+$mobile-context: bp(max-width, $mobile-size);

@@ -1,0 +1,86 @@
+// -*- coding: utf-8 -*-
+
+// ==============================
+//   Header Title
+// ==============================
+
+@mixin title($bg-size-rate, $base-size) {
+  cursor: pointer;
+  width: 380px * $bg-size-rate;
+  height: 70% + $base-size;
+  min-height: 320px;
+  margin: (10% - $base-size)  auto 0;
+  background: url("../img/title-logo.png") center center no-repeat;
+  background-size: (360px * $bg-size-rate) (230px * $bg-size-rate);
+
+  span {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+// ==============================
+//   Header Navigation
+// ==============================
+
+@mixin nav($space-size, $list-size, $font-size, $letter-size) {
+  ul {
+    width: 100%;
+    text-align: center;
+
+    li {
+      @include inline-block;
+      margin: 0 $space-size;
+      border: 1px solid $nav-border-color;
+      @include border-radius($list-size / 2);
+      @include transition($transition-base);
+
+      &:hover {
+        background: $filter-light;
+      }
+
+      a {
+        display: block;
+        width: $list-size;
+        height: $list-size;
+        line-height: $list-size;
+        font-size: $font-size;
+
+        span {
+          display: block;
+          letter-spacing: $letter-size;
+        }
+      }
+    }
+  }
+}
+
+// ==================================================
+//   Header
+// ==================================================
+
+#global-header {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+
+  h1 {
+    @include media($default-context) {
+      @include title(1, 5%);
+    }
+
+    @include media($mobile-context) {
+      @include title(0.5, 0%);
+    }
+  }
+
+  nav {
+    @include media($default-context) {
+      @include nav(10px, 100px, $font-size-large, 3px);
+    }
+
+    @include media($mobile-context) {
+      @include nav(5px, 60px, $font-size-large * 0.7, 1px);
+    }
+  }
+}

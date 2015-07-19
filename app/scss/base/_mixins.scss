@@ -1,0 +1,17 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Mixin
+// ==================================================
+
+@function bp($limitation, $size) {
+ @return "(#{$limitation}: #{$size})";
+}
+
+@mixin media($bp) {
+  @media screen and #{$bp} {
+    & {
+      @content;
+    }
+  }
+}

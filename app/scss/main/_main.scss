@@ -1,0 +1,121 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Main
+// ==================================================
+
+article {
+  width: auto;
+
+  @include media($default-context) {
+    margin: 200px 20px 20px 240px;
+  }
+
+  @include media($mobile-context) {
+    margin: 50px 10px;
+    padding: 10px;
+  }
+
+  a:hover,
+  a:focus {
+    color: $link-hover-color;
+  }
+
+  h2 {
+    font-size: 35px;
+    padding: 5px 10px;
+    letter-spacing: 10px;
+    color: $purple-light;
+  }
+
+  >div {
+    margin: 10px 0;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, .1);
+    @include border-radius(10px);
+
+    h3 {
+      font-size: 20px;
+      padding: 10px 0;
+      vertical-align: middle;
+      letter-spacing: 3px;
+    }
+
+    >div {
+      padding: 10px 0 10px 15px;
+
+      h4 {
+        font-size: 15px;
+      }
+    }
+
+    p {
+      padding: 10px 0;
+      line-height: 25px;
+    }
+
+    ul {
+      width: 100%;
+      padding: 10px 0;
+      @include clearfix;
+
+      li {
+        margin: 0 10px 0 0;
+        padding: 0 0 0 20px;
+        line-height: 25px;
+        float: left;
+
+        &:before {
+          content: '■';
+          width: 1em;
+          margin: 0 -1.5em;
+          color: $purple-light;
+          font-size: 60%;
+          float: left;
+        }
+      }
+    }
+
+    dl {
+      width: 100%;
+      padding: 10px 0;
+      @include clearfix;
+
+      dt, dd {
+        line-height: 25px;
+        word-wrap: break-word;
+      }
+
+      dt {
+        padding: 0 0 0 20px;
+
+        &:before {
+          content: '■';
+          width: 1em;
+          margin: 0 -1.5em;
+          color: $purple-light;
+          font-size: 60%;
+          float: left;
+        }
+
+        @include media($default-context) {
+          @include box-sizing(border-box);
+          width: 15%;
+          float: left;
+          @include clearfix;
+        }
+      }
+
+      dd {
+        @include media($default-context) {
+          width: 85%;
+          float: left;
+        }
+
+        @include media($mobile-context) {
+          margin: 0 0 0 2em;
+        }
+      }
+    }
+  }
+}

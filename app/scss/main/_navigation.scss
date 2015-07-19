@@ -1,0 +1,159 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Navigation
+// ==================================================
+
+#fix-nav {
+  #drawer-wrap {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+
+    @include media($mobile-context) {
+      width: 100%;
+      height: 50px;
+    }
+
+    h1 {
+      cursor: pointer;
+
+      @include media($default-context) {
+        width: 180px;
+        height: 260px;
+        background: url("../img/title-logo-side.png") center top no-repeat;
+      }
+
+      @include media($mobile-context) {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: rgba(255, 255, 255, .9) url("../img/title-logo-bar.png") center center no-repeat;
+        background-size: 40px;
+      }
+
+      span {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    nav {
+      @include media($default-context) {
+      }
+
+      @include media($mobile-context) {
+        display: none;
+        position: fixed;
+        z-index: 30;
+      }
+
+      ul {
+        @include media($default-context) {
+          display: block;
+          width: 180px;
+          text-align: center;
+        }
+
+        @include media($mobile-context) {
+          position: fixed;
+          z-index: 20;
+          top: 50px;
+          left: 0;
+          width: 30%;
+          min-width: 100px;
+          padding: 25px 20px;
+        }
+
+        li {
+          @include media($default-context) {
+            border: 1px solid #768;
+            border-width: 0 0 1px;
+          }
+
+          @include media($mobile-context) {
+            width: 60px;
+            height: 60px;
+            margin: 15px;
+            background: $purple-dark * 0.5;
+            text-align: center;
+            border: 1px solid $gray-light;
+            @include border-radius(30px);
+          }
+
+          a {
+            @include media($default-context) {
+              display: block;
+              height: 80px;
+              font-size: 18px;
+              line-height: 80px;
+
+              &:hover,
+              &:active {
+                opacity: .5;
+              }
+            }
+
+            @include media($mobile-context) {
+              display: block;
+              position: relative;
+              width: 60px;
+              height: 60px;
+              line-height: 60px;
+              font-size: $font-size-large * 0.7;
+            }
+
+            span {
+              @include media($default-context) {
+                display: block;
+                letter-spacing: 3px;
+              }
+
+              @include media($mobile-context) {
+                display: block;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #drawer-icon {
+      @include media($mobile-context) {
+        cursor: pointer;
+        position: absolute;
+        z-index: 30;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background: url("../img/drawer-icon.png") center center no-repeat;
+        background-size: 30px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, .1);
+        }
+      }
+    }
+
+    #drawer-shade {
+      @include media($mobile-context) {
+        display: none;
+        position: fixed;
+        z-index: 0;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $purple-dark * 0.5;
+        opacity: .8;
+      }
+    }
+  }
+}

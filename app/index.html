@@ -2,53 +2,174 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scaleable=no" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
 
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Kaka Wup, Girls!</title>
   </head>
 
   <body>
+    <!----- Main ----->
     <div class="container">
       <section>
+        <!-- Header -->
         <header id="global-header">
           <h1><span>Kaka Wup, Girls!</span></h1>
+
           <nav>
             <ul>
               <li><a href="#profile"><span>Profile</span></a></li>
               <li><a href="#blog"><span>Blog</span></a></li>
               <li><a href="#works"><span>Works</span></a></li>
-              <li><a href="#social"><span>Social</span></a></li>
+              <li><a href="#contact"><span>Contact</span></a></li>
             </ul>
           </nav>
         </header>
 
+        <!-- Content -->
         <article id="profile">
           <h2>Profile</h2>
+          <div>
+            <h3>About me</h3>
+
+            <dl>
+              <dt>名前:</dt>
+              <dd>
+                カカワップ (kakawup / kaka_wup)<br />
+                名前の由来はよく憶えていません。Twitterアカウントを作る際に適当に考えました。
+              </dd>
+              <dt>年齢:</dt>
+              <dd>
+                19歳 (高4)<br />
+                『Wake Up, Girls!』の青山さん・高木さんと同い年です。
+             </dd>
+              <dt>出身:</dt>
+              <dd>
+                神戸県
+              </dd>
+              <dt>趣味:</dt>
+              <dd>
+                絵 / プログラミング / 登山 <br />
+                最近たまに絵を描くように趣味と言えるものが出来ました。アドバイス等コメントいただけると嬉しいです。
+              </dd>
+              <dt>好き:</dt>
+              <dd>
+                Wake Up, Girls! / ゆゆ式 / ナナシス / アイカツ! <br />
+                アニメ・声優共に応援している、イベント参加率の低い在宅ワグナーです。2次は久海・片山、3次は箱推しです。<br />
+                ナナシスは晴海三姉妹、アイカツ!はあおいが1番好きです。多分。
+              </dd>
+            </dl>
+          </div>
+          <div>
+            <h3>Social</h3>
+
+            <dl>
+              <dt><a href="https://twitter.com/kakawup">Twitter</a>:</dt>
+              <dd>基本的にWUGのことを呟いています。</dd>
+              <dt><a href="http://www.pixiv.net/member.php?id=6435808">pixiv</a>:</dt>
+              <dd>基本的にWUGの絵を投稿しています。</dd>
+              <dt><a href="http://ask.fm/kaka_wup">Ask.fm</a>:</dt>
+              <dd>何でも質問して！オタクなんだしさ、皆で考えようよ！</dd>
+              <dt><a href="https://www.amazon.co.jp/registry/wishlist/2Q0CHFSNEY5Y6">Wish List</a>:</dt>
+              <dd>誕生日は07/21です。買ってください。</dd>
+              <dt><a href="https://github.com/kakawup">Github</a>:</dt>
+              <dd>ContributionsをWUG色に染めるのが夢です。</dd>
+            </dl>
+          </div>
+          <div>
+            <h3>Skills</h3>
+            <div>
+              <h4>Programing Langages</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS / SCSS</li>
+                <li>Javascript / CoffeeScript</li>
+                <li>Python (Flask / Django / GAE)</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>C++</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Programing Environments</h4>
+              <ul>
+                <li>Linux Mint 17</li>
+                <li>Emacs 24.3</li>
+              </ul>
+            </div>
+          </div>
         </article>
         <article id="blog">
           <h2>Blog</h2>
+          <div>
+            <p>
+              まだブログ始めていません。<br />
+              Octopressかはてなを使うかもしれないし、ブログ自体始めないかもしれない。
+            </p>
+          </div>
         </article>
         <article id="works">
           <h2>Works</h2>
+          <div>
+            <h3>Content</h3>
+            <p>
+              まだ何も制作物はありません。<br />
+              WUG関連で何か作るかもしれないし、何も作らないかもしれない。<br />
+            </p>
+          </div>
         </article>
-        <article id="social">
-          <h2>Social</h2>
+        <article id="contact">
+          <h2>Contact</h2>
+          <div>
+            <h3>Email</h3>
+            <ul>
+              <li>kakawup [At Mark] gmail.com
+            </ul>
+          </div>
+          <div>
+            <h3>SNS</h3>
+            <dl>
+              <dt>Twitter</dt>
+              <dd><a href="https://twitter.com/kakawup">@kakawup</a> (Direct Message / Reply)</dd>
+              <dt>Skype</dt>
+              <dd>kaka_wup (Instant Messaging)</dd>
+              <dt>Girhub</dt>
+              <dd><a href="https://github.com/kakawup">kakawup</a> (Pull Request)</dd>
+            </dl>
+          </div>
         </article>
+
+        <!-- Footer -->
+        <footer id="global-footer"></footer>
       </section>
     </div>
 
+    <!----- Navigation ----->
     <section id="fix-nav">
+      <div id="drawer-wrap">
         <h1><span>Kaka Wup, Girls</span></h1>
         <nav>
           <ul>
             <li><a href="#profile"><span>Profile</span></a></li>
             <li><a href="#blog"><span>Blog</span></a></li>
             <li><a href="#works"><span>Works</span></a></li>
-            <li><a href="#social"><span>Social</span></a></li>
+            <li><a href="#contact"><span>Contact</span></a></li>
           </ul>
         </nav>
+        <span id="drawer-icon"></span>
+        <div id="drawer-shade"></div>
+      </div>
     </section>
+
+    <!----- Script ----->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.smoothScroll.js"></script>
+
+    <script src="js/fadeIn.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixNav.js"></script>
+    <script src="js/navDrawer.js"></script>
   </body>
 </html>

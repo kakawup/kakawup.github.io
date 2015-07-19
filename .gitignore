@@ -1,4 +1,8 @@
 !.gitkeep
 
 node_modules
+.sass-cache
+
 dist/*
+app/img/*.png
+app/img/*.ico

@@ -1,0 +1,31 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Container
+// ==================================================
+
+.container {
+  /* position: fixed; */
+  width: 100%;
+  height: 100%;
+  /* overflow: auto; */
+
+  section {
+    width: 100%;
+    height: 100%;
+
+    @include media($default-context) {
+      max-width: $content-width;
+      margin: 0 auto;
+    }
+
+    @include media($mobile-context) {
+      max-width: 100%;
+    }
+
+    #global-header > h1,
+    #global-header > nav li {
+      display: none;
+    }
+  }
+}

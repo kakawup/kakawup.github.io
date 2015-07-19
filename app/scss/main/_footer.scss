@@ -1,0 +1,22 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Footer
+// ==================================================
+
+#global-footer {
+  width: auto;
+  opacity: .2;
+  background: url("../img/title-logo.png") center center no-repeat;
+
+  @include media($default-context) {
+    height: 400px;
+    margin: 50px 10px 50px 240px;
+  }
+
+  @include media($mobile-context) {
+    height: 300px;
+    margin: 20px;
+    background-size: 180px 115px;
+  }
+}
